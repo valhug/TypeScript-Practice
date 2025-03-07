@@ -13,10 +13,10 @@ import { Blog } from './types';
 
 function App() {
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const [editingBlog, setEditingBlog] = useState<Blog | null>(null);
+  const [editingBlog, setEditingBlog] = useState<Blog | undefined>(undefined);
 
   const openModalForNewBlog = () => {
-    setEditingBlog(null);
+    setEditingBlog(undefined);
     setIsModalOpen(true);
   };
 

@@ -1,6 +1,6 @@
 import UserCard from "./UserCard";
 
-const peopleToFollow = [
+export const peopleToFollow = [
     { name: "Alena Gouse", following: false },
     { name: "Ruben Bator", following: true },
     { name: "Aspen Stanton", following: false },

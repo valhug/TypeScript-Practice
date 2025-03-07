@@ -1,6 +1,14 @@
-import { FaUserCircle } from "react-icons/fa";  
+import { FaUserCircle } from "react-icons/fa"; 
 
-function UserCard({ person } ) {
+
+interface UserCardProps {
+    person: {
+    name: string;
+    following: boolean;
+    };
+}
+
+function UserCard({ person } : UserCardProps ) {
     return (
         <div className="flex items-center justify-between">
             <div className="flex items-center">
